@@ -1,7 +1,7 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&display=swap');
+
 body {
   padding: 0;
   margin: 0;
@@ -70,6 +70,10 @@ nav {
   margin-top: 100px;
 }
 
+.banner p {
+  animation: inOut 1s ease-out forwards;
+  opacity: 0;
+}
 
 .banner {
   display: flex;
@@ -123,6 +127,10 @@ nav {
   justify-content: end;
   color: rgb(255, 255, 255);
   transition: all 0.3s ease-in-out;
+  animation: inOut linear 0.1s forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+ 
 }
 
 .card button {
@@ -192,58 +200,59 @@ nav {
   background-repeat: no-repeat;
   color: white;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-.title{
+.title {
   font-size: 40px;
   font-family: "Raleway", serif;
 }
 
-.cafe-info{
+.cafe-info {
   font-family: "Raleway", serif;
   width: 90%;
 }
 
-.quality{
+.quality {
   font-family: "Rubik", serif;
   font-size: 20px;
 }
 
-.social{
+.social {
   width: screen;
 }
 
-.follow-line{
+.follow-line {
   width: 100%;
   display: flex;
   height: 350px;
 }
 
-.follow-line div{
+.follow-line div {
   width: 50%;
 }
-.follow-line p{
+
+.follow-line p {
   width: 50%;
   background-color: antiquewhite;
   padding: 20px;
 }
 
-.id{
+.id {
   font-family: "Lexend Giga", serif;
 }
 
-.posts{
+.posts {
   width: 90%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
-.post{
+.post {
   width: 1/4;
   height: 200px;
   display: flex;
@@ -252,9 +261,13 @@ nav {
   position: relative;
   bottom: 250px;
   margin-left: 10px;
+  animation: fadeIn linear 0.1s forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+
 }
 
-.post p{
+.post p {
   color: white;
   border: 2px solid white;
   height: 20px;
@@ -264,27 +277,28 @@ nav {
   padding-bottom: 5px;
 }
 
-.post1{
+.post1 {
   background-image: url("https://th.bing.com/th/id/OIP.Ny8DQsj__Rq79_p9-ctsCwAAAA?rs=1&pid=ImgDetMain");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.post2{
+
+.post2 {
   background-image: url("https://lifeasmama.com/wp-content/uploads/2017/01/thai-iced-coffee-5-of-10.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.post3{
+.post3 {
   background-image: url("https://th.bing.com/th/id/OIP.zcTgbFx5pJS--cdMAE-c0gHaFj?rs=1&pid=ImgDetMain");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.post4{
+.post4 {
   background-image: url("https://img.freepik.com/premium-photo/iced-coffee-with-milk_1339-33601.jpg");
   background-size: cover;
   background-position: center;
@@ -293,10 +307,10 @@ nav {
 
 
 
-.newsLetter{
+.newsLetter {
   width: screen;
   background:
-  linear-gradient(rgba(57, 18, 18, 0.749), rgba(0, 0, 0, 0.5)), url("https://th.bing.com/th/id/OIP.qef5sRfnCBv6q29uTviAZAHaEy?rs=1&pid=ImgDetMain");
+    linear-gradient(rgba(57, 18, 18, 0.749), rgba(0, 0, 0, 0.5)), url("https://th.bing.com/th/id/OIP.qef5sRfnCBv6q29uTviAZAHaEy?rs=1&pid=ImgDetMain");
   height: 300px;
   background-size: cover;
   background-position: center;
@@ -305,26 +319,26 @@ nav {
   padding-bottom: 30px;
 }
 
-.head{
+.head {
   font-size: 50px;
   padding: 10px;
   color: white;
 }
 
-.newsLetter div{
+.newsLetter div {
   display: flex;
   justify-content: space-around;
   color: white;
 }
 
-.newsLetter div button{
+.newsLetter div button {
   background: transparent;
   color: white;
   border: 2px solid white;
   cursor: pointer;
 }
 
-.footer{
+.footer {
   width: screen;
   height: 200px;
   display: flex;
@@ -334,8 +348,83 @@ nav {
   background: rgba(250, 235, 215, 0.5);
 }
 
-a{
+a {
   text-decoration: none;
-  color: rgb(90, 43, 43);;
+  color: rgb(90, 43, 43);
+  ;
 }
 
+
+
+@media (max-width: 650px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 510px) {
+  .banner {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 100px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .newsLetter div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subs {
+    width: 50%;
+    padding: 2px;
+  }
+
+  .posts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post {
+    margin: 2px;
+  }
+
+  .newsLetter {
+    height: 500px;
+  }
+
+  .footer p {
+    padding: 5px;
+  }
+}
+
+@keyframes inOut {
+  from {
+    opacity: 0;
+    transform: translateX(-100vw);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(100vh);
+}
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+}
