@@ -368,7 +368,7 @@ a {
   .banner {
     display: flex;
     flex-direction: column-reverse;
-    margin-bottom: 100px;
+    margin-top: 200px;
   }
 }
 
@@ -379,7 +379,9 @@ a {
     flex-direction: column;
     align-items: center;
   }
-
+.banner{
+  margin-top: 300px;
+}
   .subs {
     width: 50%;
     padding: 2px;
