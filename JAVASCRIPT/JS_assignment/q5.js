@@ -13,9 +13,5 @@ const calculateTicketPrice = (age, showTime) => {
   }
 }
 
-console.log(calculateTicketPrice(20, "5 PM"));
-console.log(calculateTicketPrice(70, "5 PM"));
-console.log(calculateTicketPrice(2, "2 PM"));
-
 
 

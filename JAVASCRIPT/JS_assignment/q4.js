@@ -9,6 +9,3 @@ const trafficLightControl = (density) => {
 }
 
 
-console.log(trafficLightControl("Heavy Traffic"));
-console.log(trafficLightControl("Moderate Traffic"));
-console.log(trafficLightControl("Light Traffic" ));

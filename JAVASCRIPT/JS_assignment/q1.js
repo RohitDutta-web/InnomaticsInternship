@@ -18,7 +18,3 @@ const atmWithdrawal = (balance, amount, pin, enteredPin) => {
   };
 }
 
-console.log(atmWithdrawal(10000, 2000, 78658, 78658));
-console.log(atmWithdrawal(10000, 20000, 78658, 78658));
-console.log(atmWithdrawal(10000, 2021, 78658, 78658));
-

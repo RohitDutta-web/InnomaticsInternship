@@ -18,12 +18,3 @@ const calculateFinalAmount = (price) => {
   return finalAmount;
 }
 
-console.log(calculateFinalAmount(250));
-
-console.log(calculateFinalAmount(10));
-
-console.log(calculateFinalAmount(500));
-console.log(calculateFinalAmount(600));
-
-console.log(calculateFinalAmount(2000));
-

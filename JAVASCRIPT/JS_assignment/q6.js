@@ -14,7 +14,3 @@ const isEligibleForJob = (age, experience, qualification) => {
 
 
 }
-console.log(
-
-  isEligibleForJob(29, "5 months", "Bachelor's Degree")
-);

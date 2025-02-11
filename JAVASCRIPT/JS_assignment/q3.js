@@ -23,9 +23,3 @@ const studentGradingSystem = (marks, attendance ) => {
   return grade;
 }
 
-console.log(studentGradingSystem(90, 70));
-console.log(studentGradingSystem(90, 60));
-console.log(studentGradingSystem(45, 20));
-console.log(studentGradingSystem(65, 98));
-console.log(studentGradingSystem(10, 94));
-
