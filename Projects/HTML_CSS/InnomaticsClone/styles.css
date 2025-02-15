@@ -67,7 +67,7 @@ nav button {
   cursor: pointer;
 }
 
-.nav-buttons li{
+.nav-buttons li {
   padding: 10px;
   cursor: pointer;
   border-radius: 3px;
@@ -77,11 +77,13 @@ nav button {
   -o-border-radius: 3px;
 }
 
-.nav-buttons li:hover{
+.nav-buttons li:hover {
   background-color: red;
 }
+
 .dropdown-menu {
   display: none;
+
 }
 
 .courses {
@@ -98,6 +100,7 @@ nav button {
   width: 100%;
   border-bottom: 2px solid white;
   padding: 10px;
+
 }
 
 .dropdown-menu li a {
@@ -110,10 +113,14 @@ nav button {
   display: none;
 
 }
-.inner-menu{
+
+.inner-menu {
   position: relative;
 }
 
+.events{
+  right: 10px;
+}
 
 .inner-menu:hover .inner-dropdown {
   display: block;
@@ -122,21 +129,96 @@ nav button {
   z-index: 40;
   background: #000;
   color: white;
-  width: 250px;
+  width: 300px;
   border: 2px white solid;
 }
 
-.dropdown-menu li:hover{
-background-color: red;
-cursor: pointer;
+.dropdown-menu li:hover {
+  background-color: red;
+  cursor: pointer;
 }
+
 .courses:hover .dropdown-menu {
   height: auto;
   width: 250px;
   display: block;
   position: absolute;
   background: #000;
+  z-index: 40;
+}
 
+.menu-buttons {
+  display: none;
+  position: absolute;
+  width: 200px;
+}
 
+.menu-buttons li a {
+  text-decoration: none;
+  color: white;
 
+}
+
+.menu-buttons li {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid white;
+}
+
+.menu-buttons li:hover {
+  background-color: red;
+}
+
+#menu:checked~.menu-buttons {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  gap: 0px;
+  margin-top: 40px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu-courses:hover .courses-menu {
+  display: flex;
+  flex-direction: column;
+  background: #000;
+
+}
+
+.courses-menu {
+  display: none;
+
+}
+
+@media (max-width: 1000px) {
+  .nav-buttons {
+    display: none;
+  }
+
+  .menu {
+    display: flex;
+ 
+    font-weight: bold;
+    font-family: "Montserrat", serif;
+  
+  }
+
+}
+
+.label::after {
+  content: "☰ Menu";
+  font-size: 20px;
+  cursor: pointer;
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+}
+#menu:checked ~ .label::after {
+  content: "✖ Close"; 
+  background: rgb(0, 0, 0);
 }
