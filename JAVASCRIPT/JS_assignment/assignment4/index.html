@@ -5,10 +5,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
-  <title>Shop</title>
+  <title>FoodDash</title>
 </head>
 
 <body>
+  <header>
+    <nav>
+      <div class="nav-bar">
+        <p>FoodDash</p>
+        <form action="" class="form">
+          <label for="search" class="label">
+            <svg class="search-icon" aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 19.9 19.7">
+              <title id="title">Search Icon</title>
+              <desc id="desc">Search icon.</desc>
+              <g fill="none" stroke="#848F91">
+                <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+                <circle cx="8" cy="8" r="7" />
+              </g>
+            </svg>
+          </label>
+          <input type="text" id="search" name="search" placeholder="search">
+        </form>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Menu</li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <main>
+    <section>
+      <div>
+        <p class="heading">Food items</p>
+      </div>
+
+      <div class="food-items">
+        <div class="items" id="items">
+        
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="summary-section">
+      <div class="cart-summary">
+        <div class="items">
+          <p class="no-items">No Items selected</p>
+
+        </div>
+        <div class="total">
+          <p>Total : <span class="total-price">$0</span></p>
+
+        </div>
+        <div class="btn">
+          <button class="payment">Proceed to payment</button>
+          <button class="clear-cart">Clear cart</button>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+
+
+
 
   <script src="./index.js"></script>
 </body>
