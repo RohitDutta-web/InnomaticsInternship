@@ -145,6 +145,7 @@ const updateCartUi = () => {
 
   if (cart.length < 1) {
     cartContainer.innerHTML = `<p class="noItems">No Items selected</p>`;
+    document.querySelector(".total-price").innerText = `$${0}`;
     return;
   }
 
