@@ -230,11 +230,10 @@ img:hover {
   -o-border-radius: 20px;
 }
 
-.no-items {
+.noItems {
   font-size: 50px;
   font-weight: bold;
   color: #3d5a80a4;
-
 }
 
 .btn {
@@ -245,18 +244,21 @@ img:hover {
   align-items: center;
   gap: 10px;
 }
-.clear-cart{
+
+.clear-cart {
   background-color: rgb(242, 127, 127);
 }
 
-.clear-cart:hover{
+.clear-cart:hover {
   background: red;
   cursor: pointer;
 }
 
-.payment{
-  background-color:  #708fe5;;
+.payment {
+  background-color: #708fe5;
+  ;
 }
+
 .btn button {
   border: none;
   padding: 10px;
@@ -287,13 +289,13 @@ img:hover {
   right: 20px;
   padding: 5px;
   height: 20px;
- 
+
   color: white;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   opacity: 0.9;
   width: 200px;
-  text-align:start ;
+  text-align: start;
   padding-left: 10px;
   transition: opacity 1s ease-in-out;
   z-index: 1000;
@@ -315,3 +317,18 @@ img:hover {
 .notification.info {
   background-color: #007bff;
 }
+
+.increaseQuantity{
+  background-color: #3d5a80;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
+.removeItem{
+  background-color: #708fe5;
+  cursor: pointer;
+  color: white;
+  font-size: 15px;
+}
+
