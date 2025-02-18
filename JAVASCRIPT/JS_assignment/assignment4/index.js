@@ -79,7 +79,6 @@ const removeFromCart = (id) => {
   showNotification("Cart updated", "info");
   saveCartToLocalStorage();
   updateCartUi();
-  document.querySelector(".total-price").innerText = `$${0}`;
   return;
 
 
