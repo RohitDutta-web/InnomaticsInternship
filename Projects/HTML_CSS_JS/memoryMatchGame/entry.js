@@ -5,3 +5,4 @@ document.getElementById("usernameForm")
     localStorage.setItem("username", username);
     window.location.href = "menu.html";
   })
+

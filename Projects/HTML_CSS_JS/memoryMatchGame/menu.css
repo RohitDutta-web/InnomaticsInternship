@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", serif;
+}
+
+.menu_body {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(79, 156, 231);
+  background: linear-gradient(148deg, rgba(79, 156, 231, 1) 6%, rgba(48, 167, 249, 1) 61%, rgba(114, 230, 244, 1) 100%);
+}
+
+.menu_body h1 {
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  color: white;
+}
+
+.category {
+  padding-left: 10px;
+}
