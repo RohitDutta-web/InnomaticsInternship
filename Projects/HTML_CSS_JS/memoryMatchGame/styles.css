@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", serif;
+}
+
+.body {
+  z-index: 0px;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(48, 66, 135);
+  background: linear-gradient(148deg, rgba(48, 66, 135, 1) 0%, rgba(136, 213, 222, 1) 100%, rgba(254, 254, 254, 0.017595307917888547) 100%);
+}
+
+.entry_card form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#username {
+  outline: none;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.5;
+  margin: 5px;
+}
+
+.entry_btn {
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-top: 10px;
+  color: white;
+  background: linear-gradient(148deg, rgba(79, 156, 231, 1) 6%, rgba(48, 167, 249, 1) 61%, rgba(114, 230, 244, 1) 100%);
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.entry_btn:hover {
+  box-shadow: 0 0 15px rgba(79, 156, 231, 0.8),
+    0 0 25px rgba(48, 167, 249, 0.8),
+    0 0 35px rgba(114, 230, 244, 0.8);
+  transform: scale(1.05);
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(79, 156, 231, 0.5),
+      0 0 10px rgba(48, 167, 249, 0.5),
+      0 0 15px rgba(114, 230, 244, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 10px rgba(79, 156, 231, 0.7),
+      0 0 20px rgba(48, 167, 249, 0.7),
+      0 0 30px rgba(114, 230, 244, 0.7);
+  }
+
+  100% {
+    box-shadow: 0 0 5px rgba(79, 156, 231, 0.5),
+      0 0 10px rgba(48, 167, 249, 0.5),
+      0 0 15px rgba(114, 230, 244, 0.5);
+  }
+}
+
+.entry_card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #83aded;
+  border-radius: 15px;
+  border: 2px solid rgba(114, 230, 244, 0.8);
+  animation: glow 2s infinite alternate ease-in-out;
+  color: white;
+}
